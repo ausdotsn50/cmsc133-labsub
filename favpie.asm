@@ -1,3 +1,7 @@
+# Program File: favpie.asm
+# Author: Angela Denise Almazan
+# Purpose: Print program and user specified strings
+
 .text 
 main:
 	li $v0, 4

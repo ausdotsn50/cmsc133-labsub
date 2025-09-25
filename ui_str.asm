@@ -1,3 +1,7 @@
+# Program File: ui_str.asm
+# Author: Angela Denise Almazan
+# Purpose: Enter string input from user
+
 .text
 main:
 	li $v0, 4 

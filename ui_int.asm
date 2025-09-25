@@ -1,3 +1,7 @@
+# Program File: ui_int.asm
+# Author: Angela Denise Almazan
+# Purpose: Enter integer from user
+
 .text
 main:
 	li $v0, 4
