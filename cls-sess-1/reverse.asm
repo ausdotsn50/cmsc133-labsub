@@ -20,9 +20,9 @@ main:
 
 readingloop:
 
-        lb  $a0, input($t0)   # Read each character
+        lb  $s0, input($t0)   # Read each character
 
-        beq $a0, '\0', readingexit  # Make sure the string is not yet over
+        beq $s0, '\0', readingexit  # Make sure the string is not yet over
 
         addiu   $t0, $t0, 1     # i ++
 
@@ -31,6 +31,7 @@ readingexit:
 
 
 reversingloop:
+	move $a0, $s0
         li  $v0, 11     # Print a character you have read    
        
         subiu $t0, $t0, 1 # i--

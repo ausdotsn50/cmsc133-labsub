@@ -15,7 +15,7 @@ main:
 	
 	start_loop:
 		sne $t2, $t0, $s0	# set not equal
-		beqz $t2, end_loop 	# if $t2 is equal to 1 as returned by sne; end the loop
+		beqz $t2, end_loop 	# if $t2 is equal to 0 as returned by sne; end the loop
 		
 		add $t1, $t1, $t0
 		addi  $t0, $t0, 1
