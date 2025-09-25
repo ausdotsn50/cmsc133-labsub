@@ -76,7 +76,7 @@ PromptInt:
 	# Read the integer value. Note that at the end of the
 	# syscall the value is already in $v0, so there is no
 	# need to move it anywhere.
-	move $a0, $a1
+	# move $a0, $a1
 	li $v0, 5
 	syscall
 
