@@ -1,8 +1,14 @@
+===
 jal 
 - (call subprogram)
 
 jr $ra 
 - (return from subprogram) operators
 
+===
 b uses branch mechanism
 j uses jump mechanism
+
+===
+mflo - quotient
+mfhi - remainder
