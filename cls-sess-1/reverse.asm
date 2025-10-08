@@ -15,6 +15,8 @@ main:
 	# li $v0, 4
 	# syscall
 	
+	jal PrintNewLine
+	
 	# Output the text in reverse
 	add $t0, $zero, $zero   # counter
 
@@ -49,9 +51,9 @@ reversingexit:
 	li $v0, 10
 	syscall
 	
-	
 .data
-	input: .space 4
-	inputSize: .word 
+	input: .space 5
+	inputSize: .word 4
 	prompt: .asciiz "Enter exactly 3 characters: "
-	
+
+.include "../utils.asm"

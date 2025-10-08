@@ -94,7 +94,24 @@ PrintString:
 	addi $v0, $zero, 4
 	syscall
 	jr $ra
+
+# subprogram: PromptString
+# author: Angela Denise Almazan
+# purpose: return string to the caller
+.text
+PromptString:
+	# Prints prompt
+	li $v0, 4
+	# la $a0, prompt
+	syscall
 	
+	# Read the input string
+	li $v0, 8
+	la $a0, input
+	lw $a1, inputSize
+	syscall
+	
+	jr $ra
 # subprogram: Exit
 # author: Charles Kann
 # purpose: to use syscall service 10 to exit a program
